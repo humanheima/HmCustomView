@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MySwitchButton">
+        <attr name="backDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumbMarginLeft" format="dimension|reference" />
+        <attr name="thumbMarginRight" format="dimension|reference" />
+        <attr name="thumbMarginTop" format="dimension|reference" />
+        <attr name="thumbMarginBottom" format="dimension|reference" />
+        <attr name="thumbWidth" format="dimension|reference" />
+        <attr name="thumbHeight" format="dimension|reference" />
+        <attr name="backRadius" format="dimension|reference" />
+        <attr name="thumbRadius" format="dimension|reference" />
+        <attr name="tintColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="backMeasureRatio" format="float" />
+        <attr name="backColor" format="color|reference"/>
+        <attr name="textOn" format="string|reference" />
+        <attr name="textOff" format="string|reference" />
+        <attr name="textMarginH" format="dimension|reference" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="autoAdjustTextPosition" format="boolean" />
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--背景选择顺序从上到下优先级递减,shape 默认的形状是rectangle-->
+    <!--选中同时不可用状态下的背景-->
+    <item android:state_checked="true" android:state_enabled="false">
+        <shape android:shape="oval">
+            <solid android:color="#b8e2f8" />
+        </shape>
+    </item>
+    <!--不可用状态下的背景-->
+    <item android:state_enabled="false">
+        <layer-list>
+            <item android:bottom="6dp" android:left="4dp" android:right="4dp" android:top="6dp">
+                <shape>
+                    <solid android:color="#ff3344" />
+                    <corners android:radius="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!--选中状态下的背景-->
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="#28a4e9" />
+        </shape>
+    </item>
+    <!--其他状态下的背景-->
+    <item>
+        <layer-list>
+            <item android:bottom="6dp" android:left="4dp" android:right="4dp" android:top="6dp">
+                <shape>
+                    <solid android:color="#00e676" />
+                    <corners android:radius="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

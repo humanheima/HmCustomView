@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_switch_button_example"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default style" />
+
+            <com.humanheima.hmcustomview.ui.widget.SwitchButton
+                android:id="@+id/sb_default"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with text" />
+
+            <com.humanheima.hmcustomview.ui.widget.SwitchButton
+                android:id="@+id/sb_with_text"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/custom_text_color"
+                app:textOff="Off"
+                app:textOn="On" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disable state" />
+
+            <com.humanheima.hmcustomview.ui.widget.SwitchButton
+                android:id="@+id/sb_disable_unchecked"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disable state" />
+
+            <com.humanheima.hmcustomview.ui.widget.SwitchButton
+                android:id="@+id/sb_disable_ochecked"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="custom style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_custom_style1"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backMeasureRatio="2.2"
+            app:backRadius="2dp"
+            app:thumbRadius="2dp"
+            app:tintColor="#49416E" />
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_custom_flyme"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backDrawable="@drawable/flyme_back_drawable"
+            app:backMeasureRatio="2.2"
+            app:thumbDrawable="@drawable/flyme_thumb_drawable"
+            app:thumbHeight="16dp"
+            app:thumbWidth="16dp" />
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_custom_mimu"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backDrawable="@drawable/miui_back_drawable"
+            app:backMeasureRatio="2"
+            app:thumbDrawable="@drawable/miui_thumb_drawable"
+            app:thumbHeight="18dp"
+            app:thumbWidth="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="material style and ios style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_custom_md"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backColor="@color/md_back_color"
+            app:backMeasureRatio="1.45"
+            app:thumbDrawable="@drawable/md_thumb"
+            app:thumbHeight="42dp"
+            app:thumbMarginBottom="-14dp"
+            app:thumbMarginLeft="-16dp"
+            app:thumbMarginRight="-16dp"
+            app:thumbMarginTop="-14dp"
+            app:thumbWidth="42dp" />
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_custom_ios"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backDrawable="@drawable/ios_back_drawable"
+            app:backMeasureRatio="2"
+            app:thumbDrawable="@drawable/ios_thumb_drawable"
+            app:thumbHeight="18dp"
+            app:thumbWidth="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="without animation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_test_without_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="测试没有动画的效果" />
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_without_animation"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="在代码里设置文字" />
+
+        <com.humanheima.hmcustomview.ui.widget.SwitchButton
+            android:id="@+id/sb_set_text"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
